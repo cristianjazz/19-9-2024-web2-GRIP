@@ -1,0 +1,77 @@
+.contenedor /*padre*/
+{
+    background-color: rgb(141, 29, 175);
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr 7fr 1fr;
+    grid-template-areas: "cabecera    cabecera   cabecera"
+                         "menu        menu      menu"
+                         "contenido1  conten    publi"
+                         "section     section   ads"
+                         "foot        foot      foot"
+                         "rrss1       rrss2     rrss3";
+}
+/*.contenedor>div
+{
+    background-color: chartreuse;
+}*/
+.contenedor .cabecera
+{
+    background-color: yellow;
+    grid-column: cabecera;
+}
+.contenedor .menu
+{
+    background-color: coral;
+    grid-column: menu;
+}
+.contenedor .contenido
+{
+    background-color: beige;
+    grid-column: contenido1;
+}
+.contenedor .conten
+{
+    background-color: skyblue;
+    grid-column: conten;
+}
+.contenedor .ads
+{
+    background-color: rgb(207, 136, 43);
+    grid-column: publi;
+    padding: 30px;
+    display: grid;
+    grid-gap: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+}
+.ads .hijo
+{
+    background-color: brown;
+    grid-column: 1fr;
+    
+}
+.contenedor .foot
+{
+    background-color: #cecece;
+    grid-column: foot;
+}
+.contenedor .rrss1
+{
+    background-color: rgb(0, 99, 230);
+    grid-column: rrss1;
+}
+.contenedor .rrss2
+{
+    background-color: rgb(230, 106, 106);
+    grid-column: rrss2;
+}
+.contenedor .rrss3
+{
+    background-color: red;
+    grid-column: rrss3;
+}
